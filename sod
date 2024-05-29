@@ -1,0 +1,25 @@
+
+//SUM OF DIGITS
+
+#include<stdio.h>
+
+int sumofdig(int num)
+{
+    int i=num,sum=0;
+    while(i>0)
+    {
+        sum=sum+(i%10);
+        i=i/10;
+    }
+    return sum;
+}
+
+
+int main()
+{   
+    int num,result;
+    scanf("%d",&num);
+    result=sumofdig(num);
+    printf("%d",result);
+    return 0;
+}
